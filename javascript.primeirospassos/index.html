@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript primeiros passos</title>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <h1>Refresh e Redirect</h1>
+    <h2>Olá Mundo!</h2>
+    <button onclick="window.location.href='https://sujeitoprogramador.com';  ">Ir ao SujeitoProgramador</button>
+    <button onclick="window.location.href='pag2.html'; "> Ir para Página 2</button>
+    <button onclick="window.location.href = window.location.href" >Atualizar Página</button>
+
+    <h1>Modificando HTML</h1>
+
+    <div id="nome">
+        Bem vindo...
+    </div>
+    <br>
+    <button onclick="document.getElementById ('nome').innerHTML = 'Bem vindo ' + prompt('Qual seu nome?'); ">Entrar</button>
+
+    <br><br><br>
+
+    <div id="botão">
+        Qual o nome do botão?
+    </div>
+    <br>
+    <button onclick="this.innerHTML = prompt('Qual nome do botão?'); ">Qual meu nome?</button>
+
+    <h1>Criando minhas funções</h1>
+    
+    <h2>Primeiro método</h2>
+    
+    <div id="area">
+        Bem vindo...
+    </div>
+    <br>
+    <button onclick="entrar()">entrar</button>
+
+    <h2>Segundo método</h2>
+
+    <div id="area2">
+        Bem vindo...
+    </div>
+    <br>
+    <button onclick="entrar2('Nara')">entrar</button>
+
+    <h2>Terceiro método</h2>
+
+    <div id="idade">
+        Qual sua idade?
+    </div>
+    <br>
+    <button onclick="entrar3()">entrar</button>
+
+</body>
+</html>
